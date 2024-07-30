@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADA Barbershop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* CSS untuk memusatkan tombol secara horizontal */
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            /* Menyusun item flex secara vertikal */
+            align-items: center;
+            /* Memusatkan item secara horizontal */
+        }
+
+        .flex-item-right {
+            margin-top: 20px;
+            /* Menyesuaikan jarak */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container container-nav">
+            <div class="site-title">
+                <h1>ADA Barbershop</h1>
+                <p class="subtitle">Cabang Karang Klesem</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="current-page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="contact">
+        <h1>Contact Us</h1>
+        <div class="flex-container">
+            <div class="flex-item-left">
+                <h4>Lokasi</h4>
+                <p>Jl.Prof. M. Yamin, Karangklesem, Karangpucung</p>
+                <p> Kec. Purwokerto Selatan, Kab. Banyumas 53144</p>
+                <h4>Telephone</h4>
+                <p>082329219351</p>
+                <h4>Instagram</h4>
+                <p>adabarbershop_pwt</p>
+                <h4>Email</h4>
+                <p>info@adabarbershop.com</p>
+            </div>
+            <div class="flex-item-right">
+                <form action="">
+                    <!-- Tombol untuk membuka jendela chat WhatsApp -->
+                    <button type="button" onclick="openWhatsApp()">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <h3><a href="#">ADA Barbershop Cabang Karang Klesem</a></h3>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script>
+        function openWhatsApp() {
+            var phoneNumber = '6282329219351'; // Ganti dengan nomor telepon Anda (dalam format internasional)
+            var whatsappURL = 'https://wa.me/' + phoneNumber;
+            window.open(whatsappURL, '_blank');
+        }
+    </script>
+</body>
+
+</html>
